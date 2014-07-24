@@ -1,0 +1,36 @@
+
+
+
+* HOW TO COMPILE PROFILER LIBRARY :
+
+	Type :
+		cmake.
+		make
+
+
+* HOW TO USE PROFILER LIBRARY :
+
+	To launch profiled application you have to executes :
+
+	LD_PRELOAD=[path to the library]/libprofiler.so [your program]
+
+	I.e to launch a program "main" in the folder wheree the library
+	is loaded :
+
+	LD_PRELOAD=`pwd`/libprofiler.so main
+
+
+* KEYS TO USE PROFILER LIBRARY :
+
+	d -> change display mode, switch from list display, program output,
+	     full list display, and graph and list display
+
+	a -> sort by average time
+	c -> sort by cpu time
+	n -> sort by number of calls
+	
+	m -> select mode between list methods, and show longest path 
+
+	left/right -> select thread
+	up/down -> select line
+ 
